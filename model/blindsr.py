@@ -414,7 +414,7 @@ class Encoder(nn.Module):
         
         local = self.LA([f7,fea])
         
-        return fea, out, f7
+        return fea, out, local
 
 
 
