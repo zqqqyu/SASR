@@ -8,6 +8,14 @@
 1.2 Combine the HR images from these two datasets in `your_data_path/DF2K/HR` to build the DF2K dataset. 
 refer to [DASR](https://github.com/The-Learning-And-Vision-Atelier-LAVA/DASR)
 
+
+### Build the ddf
+```bash
+cd ddf
+python setup.py install
+mv build/lib*/* .
+```
+
 For training using `main.sh`:
 ```bash
 CUDA_VISIBLE_DEVICES=0 sh main.sh
